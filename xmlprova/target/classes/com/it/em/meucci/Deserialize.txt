@@ -1,0 +1,6 @@
+package com.it.em.meucci;
+
+public class Deserialize {
+    XmlMapper xmlMapper = new XmlMapper();
+    SimpleBean value= xmlMapper.readValue("<SimpleBean><x>1</x><y>2</y></SimpleBean>", SimpleBean.class);
+}
